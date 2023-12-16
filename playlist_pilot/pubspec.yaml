@@ -12,9 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
 
-  url_launcher: ^7.0.6
+  url_launcher: ^6.2.2
   cupertino_icons: ^1.0.2
-  provider: ^6.2.2
+  provider: ^6.1.1
 
 dev_dependencies:
   flutter_test:

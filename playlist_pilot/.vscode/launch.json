@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [ 
+    
+        {
+            "name": "iPhone 13",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "8ADA9C66-3C94-4F5C-B44A-B6E136168F43"
+        },
+    ]
+}
