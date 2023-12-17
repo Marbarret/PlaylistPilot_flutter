@@ -10,7 +10,7 @@ class SpotifyAuthViewModel with ChangeNotifier {
 
   Future<void> authenticateWithSpotify() async {
     const authURL =
-        'https://accounts.spotify.com/authorize?client_id=YOUR_CLIENT_ID&response_type=code&redirect_uri=YOUR_REDIRECT_URI&scope=user-read-private';
+        'https://accounts.spotify.com/authorize?client_id=6b9af07257ab49ef94a3eab3162b1112&response_type=code&redirect_uri=spotify-ios-quick-start://spotify-login-callback&scope=user-read-private';
 
     _isAuthenticating = true;
     notifyListeners();
@@ -20,7 +20,6 @@ class SpotifyAuthViewModel with ChangeNotifier {
       // ignore: deprecated_member_use
       await launch(authURL);
     } else {
-      print('Failed to open URL');
       _isAuthenticating = false;
       notifyListeners();
     }
